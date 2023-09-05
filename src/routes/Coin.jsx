@@ -15,7 +15,7 @@ const Coin = (props) => {
         }).catch((error) => {
             console.log(error);
         })
-    }, []);
+    }, [url]);
 
     return (
         <div className='w-full px-4 py-24'>
