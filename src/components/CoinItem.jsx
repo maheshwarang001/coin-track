@@ -9,6 +9,7 @@ const CoinItem = (props) => {
                 <img className='h-8 mr-2' src={props.coins.image} alt="" />
                 <p className='uppercase '>{props.coins.symbol}</p>
             </div>
+    
             <p className='block'>&#163;{props.coins.current_price.toLocaleString()}</p>
             <p className={(percent > 0) ? 'text-green-500' : 'text-red-500'}>{percent}%</p>
             <p className='hidden md:flex'>&#163;{props.coins.total_volume.toLocaleString()}</p>
